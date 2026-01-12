@@ -2,18 +2,13 @@ class Student:
     id = 22
     name = 'Aqsa'
     role = 'developer'
-
-
 s1 = Student()
 print(s1.id, s1.name, s1.role)
 del s1
 
-
 #   EMPTY CLASSES FOR ADDING DYNAMIC ATTRIBUTES
 class Users:
     pass
-
-
 user = Users()
 print(user)
 user.name = 'Usama Imran'
@@ -21,10 +16,7 @@ user.role = 'Senior Software Engineer'
 print(user.name, end=' ')
 print(user.role)
 
-
-
 # PRACTICE DUNDER(DOUBLE UNDERSCORE METHODS) METHODS
-
 class Customer:
     def __init__(self,id,name,email,order):
         self.id=id

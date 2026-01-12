@@ -24,7 +24,7 @@ for x in (car1,boat1,plan1):
 
 
 
-#   inheritance polymorphism
+#   polymorphism with inheritance
 class Person:
     def __init__(self,id,name,age):
         self.id=id

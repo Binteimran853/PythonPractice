@@ -23,11 +23,6 @@ class Student:
             return f"Student Passed (Grade: {self.__grade})"
 
 
-# Object creation
 student1 = Student(12, "Ali", 34)
-
-# Dynamic grade input
 student1.set_grade()
-
-# Result
 print(student1.get_result())
