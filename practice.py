@@ -2,9 +2,9 @@ class Student:
     id = 22
     name = 'Aqsa'
     role = 'developer'
-s1 = Student()
-print(s1.id, s1.name, s1.role)
-del s1
+student1 = Student()
+print(student1.id, student1.name, student1.role)
+del student1
 
 #   EMPTY CLASSES FOR ADDING DYNAMIC ATTRIBUTES
 class Users:
