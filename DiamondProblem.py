@@ -17,3 +17,4 @@ class D(B,C):
         super().show()
 object=D()
 object.show()
+print(D.mro())
