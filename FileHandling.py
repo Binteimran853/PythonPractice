@@ -1,6 +1,6 @@
 import os, sys
 
-FILE_PATH = "/Users/dev/PyCharmMiscProject/TestFile/test1.txt"
+FILE_PATH = "/TestFile/test1.txt"
 
 while True:
     os.system('cls' if os.name == 'nt' else 'clear')
