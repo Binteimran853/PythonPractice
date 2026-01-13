@@ -8,16 +8,19 @@ class Student:
     def set_grade(self):
         while True:
             try:
-                grade=int(input('Enter Grade:'))
-                if grade>=0 and grade<=100:
-                    self.__grade=grade
+                grade = int(input('Enter Grade:'))
+                if grade >= 0 and grade <= 100:
+                    self.__grade = grade
                     break
                 else:
                     print("Grade must be between 0 and 100. Try again.")
             except ValueError:
                 print("Enter a valid number")
+
     def get_result(self):
-        if self.__grade < 60:
+        if self.__grade is None:
+            return f"Grade not define yet"
+        elif self.__grade < 60:
             return f"Student Failed (Grade: {self.__grade})"
         else:
             return f"Student Passed (Grade: {self.__grade})"
