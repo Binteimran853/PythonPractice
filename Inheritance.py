@@ -51,9 +51,40 @@ child1.paint()
 
 # MULTILEVEL INHERITANCE
 class Employee:
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name, last_name, employee_id, department):
         self.first_name = first_name
         self.last_name = last_name
+        self.employee_id = employee_id
+        self.department = department
+
+    def display_details(self):
+        print(f"FirstName: {self.first_name}")
+        print(f"LastName: {self.last_name}")
+        print(f"EmployeeId: {self.employee_id}")
+
+
+class Manager(Employee):
+    def __init__(self, first_name, last_name, role, employee_id, department):
+        super().__init__(first_name, last_name, employee_id, department)
+        self.role = role
+
+    def display_details(self):
+        super().display_details()
+        print(f"Employee Department: {self.department}")
+
+
+class SeniorManager(Manager):
+    def __init__(self, first_name, last_name, role, employee_id, department, region):
+        super().__init__(first_name, last_name, role, employee_id, department)
+        self.region = region
+
+    def display_details(self):
+        super().display_details()
+        print(f"Employee Region: {self.region}")
+
+
+senior_manager = SeniorManager("ALI", "Ahmed","Intern", 198, "IT", "Lahore")
+senior_manager.display_details()
 
 
 class A:

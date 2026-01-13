@@ -1,8 +1,22 @@
-def sum_of_numbers(*numbers):
-    for number in numbers:
-        print(number[])
+import re
+def my_function(name = 'friend'):
+    print("Hello", name)
 
-def my_function(greeting,*names):
-    for name in names:
-        print(f"greeting {name}")
-my_function('Hello','Aqsa','Ali','Amina','Aasq','Mahnoor')
+for i in range(4):
+    name=input("Enter name (if you don't enter, default name will be used):")
+    name=name.strip()
+    print(name)
+    if re.fullmatch('r[A-Za-z]',name):
+        my_function(name)
+    else:
+        my_function()
+
+def fruits_list():
+    return ['apple', 'banana', 'cherry']
+
+print(fruits_list())
+
+def fruits_tuple():
+    return (20, 45, 23, 4, 3)
+
+print(fruits_tuple())
