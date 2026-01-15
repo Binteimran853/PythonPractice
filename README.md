@@ -33,4 +33,3 @@ It demostrates concepts that I've learned including **OOP, File Hnadling, Except
 
 ---
 
-##  Folder / File Structure
