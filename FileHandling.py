@@ -1,10 +1,9 @@
 import os, sys
 
-FILE_PATH = "/TestFile/test1.txt"
+FILE_PATH = "TestFile/test1.txt"
 
 while True:
     os.system('cls' if os.name == 'nt' else 'clear')
-
     print('==== Menu ===')
     print('1: Read File')
     print('2: Write/Create File')
